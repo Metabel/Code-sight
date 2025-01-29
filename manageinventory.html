@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Inventory</title>
+</head>
+<link rel="stylesheet" href="manageinventory.css">
+<body>
+    <nav>
+        <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="#manage inventory">Manahge Inventory</a></li>
+        <li><a href="#admin">admin</a></li>
+        </ul>
+    </nav>
+    <main>
+    <h1>Computer Device Inventory Form</h1>
+    <form action="add_device.php" method="post">
+        <label for="device_type">Device Type:</label>
+        <select id="device_type" name="device_type" required>
+            <option value="Printer">Printer</option>
+            <option value="UPS">UPS</option>
+            <option value="Scanner">Scanner</option>
+            <option value="Monitor">Monitor</option>
+            <option value="CPU">CPU</option>
+            <option value="IP Phone">IP Phone</option>
+        </select>
+
+        <label for="Type">Type:</label>
+        <input type="text" id="Type" name="Type" placeholder="e.g., HP LaserJet Pro" required>
+
+        <label for="Serial Number">Serial Number:</label>
+        <input type="number" id="Serial Number" name="Serial Number" placeholder="e.g., 10" required>
+
+        <label for="Model">Model:</label>
+        <input type="text" id="Model" name="Model" required>
+        <label for="Assigned Office">:Assigned Office</label>
+        <input type="text" id="Assigned Office" name="Assigned Office" required>
+        <label for="Floor">:Floor</label>
+        <input type="text" id="Floor" name="Floor" required>
+
+
+        <button type="submit">Add Equipment</button>
+        </select>
+    </form>
+</body>
+</html>
