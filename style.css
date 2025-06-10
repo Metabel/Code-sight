@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: a2d2ff;
+    line-height:1.6;
+    font-family: sans-serif;
+}
+header{
+    background-color: pink;
+    padding: 20px;
+}
+.logoarea{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display:inline-block;
+    margin-left: 20px;
+}
+nav ul li a{
+    color:rebeccapurple;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    background:magenta;
+}
+.btn{
+    background-color: bisque;
+    border-radius: 5px;
+    display :inline-block;
+    padding:12px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color:black
+}
+.btn:hover{
+    background-color: purple;
+
+}
+.contact-section{
+    max-width: 600px;
+    margin:50px;
+    background-color: azure;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px darkkhaki;
+    text-align: left;
+}
+.contact-section h2{
+    text-align: center;
+}
+.contact-section p{
+    text-align: center;
+}
+.contact-form label{
+     display: block; 
+    color:blueviolet;
+    font-weight: bold;
+    margin-top:5px;
+}
+.contact-form.btn{
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: chocolate;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea{
+    width:100%;
+    padding :10px 12px;
+    border: 1px red;
+    margin-bottom: 10px;
+}
+.contact-form.btn :hover{
+    background-color: plum;
+}
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea{
+    border-color: lightcyan;
+    outline: none;
+}
+footer{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    color:black;
+    text-align: center;
+}
+p{
+    font-family: sans-serif;
+}
+h2{
+    color:purple;
+}
+h3{
+    color:purple;
+}
+contact{
+    color: blue;
+    text-align: center;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    border-radius: 50px;
+}
+#companyname{
+    color:cadetblue;
+    font-weight: bold;
+}
+.hero{
+    color:black;
+    text-align: center;
+    padding: 80px 30px;
+    background-color:bde0fe;
+}
+.herocontent{
+    background-color: ffafcc;
+    padding:40px;
+    border-radius: 10px;
+}
+.programs 
+{
+    background-color:cdb4db;
+    padding:50px 20px;
+    text-align: center;
+}
+.program-box{
+    width: 300px;
+    display:inline-block;
+    margin:10px;
+    padding: 20px;
+    background-color: azure;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px purple;
+
+}
+.about-section{
+
+    background-color: antiquewhite;
+    max-width: 900px;
+    margin:20px auto;
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow:0 0 8px moccasin;
+}
+.para{
+    width: 300px;
+    display:inline-block;
+    margin:10px;
+    padding: 20px;
+    background-color: azure;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px darkgoldenrod;
+}
+.why-choose-us{
+    background-color:whitesmoke;
+    padding:40px 20px;
+    margin:20px;
+}
+.why-container{
+    display: flex;
+    gap: 20px;
+    flex-direction:column;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.why-box{
+    background-color: peru;
+    border-radius: 10px;
+    width: 200x;
+    text-align: center;
+    padding:20px;
+    box-shadow:0 0 8px purple; 
+    font-weight:bold;
+}
+.image-section{
+    padding:40px 20px;
+    text-align: center;
+}
+.image-box{
+    background-color:white;
+    width: 200px;
+    margin:15px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:15px;
+    box-shadow:0 0 8px lightcoral;
+
+}
+.image-box img{
+    width: 100%;
+    height:auto;
+    border-radius:8px;
+
+}
+.testimonial-section{
+    background-color:whitesmoke;
+    padding:20px 40px;
+
+}
+.testimonial{
+    max-width:700px;
+    margin:20px auto;
+    padding:20px;
+    border-left:5px solid lightcoral;
+    box-shadow:0 0 6px purple;
+}
+.testimonial h4{
+    color:blue;
+    text-align: right;
+}
