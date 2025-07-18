@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Student List</h1>
+<table class="table table-border">
+    <thead class="table-dark">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Course</th>
+    <th>Actions</th>
+
+</tr>
+    </thead>
+    <tbody>
+        {% for student in Students %}
+        <tr>
+            <td>{{student.id}}</td>
+            <td>{{student.fullname}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.course}}</td>
+            <td>
+                {% if user.is_staff %}
+            <a href="{% url 'update_student' student.id %}"class="btn btn-primary">UPDATE</a>
+            <a href="{% url 'delete_student' student.id %}"class="btn btn-danger">DELETE</a>
+            {%else%}
+            <span>view only</span>
+            {%endif%}
+            </td>
+        </tr> 
+        {% endfor %}
+    </tbody>
+</table>
+
+    
+{% endblock %}
